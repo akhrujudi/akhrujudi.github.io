@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>elazuaga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body onload="next()">
+    <div class="main" id="main">
+        <input type="checkbox" id="btn">
+        <label class="card-area" for="btn">
+            <div class="flip-card" id="card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="text">
+                            <h1 id="front-a"></h1>
+                            <h3 id="front-b"></h3>
+                            <p id="front-c"></p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="text">
+                            <h1 id="back-a"></h1>
+                            <h3 id="back-b"></h3>
+                            <p id="back-c"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </label>
+    </div>
+
+    <div class="footer">
+        <input type="button" class="edit" value="Next" onclick="next()">
+        <input type="button" class="edit" value="Flip" onclick="flip()">
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
